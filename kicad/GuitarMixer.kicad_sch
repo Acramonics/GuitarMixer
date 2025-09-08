@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "GuitarMixer")
-		(date "2025-07-30")
-		(rev "V0.2")
+		(date "2025-09-08")
+		(rev "V0.3")
 		(company "Andrew Martin")
 		(comment 1 "Initial build")
 	)
@@ -1442,175 +1442,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer_Trim"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer_Trim"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Trim-potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable trimpot trimmer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 0.762) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:1N4148"
+		(symbol "Diode:1N5817"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1624,7 +1461,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148"
+			(property "Value" "1N5817"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1632,7 +1469,16 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1641,7 +1487,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(property "Description" "20V 1A Schottky Barrier Rectifier Diode, DO-41"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1650,7 +1496,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1659,7 +1505,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "D"
+			(property "ki_fp_filters" "D*DO?41*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1668,37 +1514,10 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?35*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4148_0_1"
+			(symbol "1N5817_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1733,7 +1552,7 @@
 					)
 				)
 			)
-			(symbol "1N4148_1_1"
+			(symbol "1N5817_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2398,6 +2217,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Notes:\n1. A bias trimmer between R8 and R9 may help reduce distortion on U2 (or just tie to earth?)\n2. Ensure that the input jacks used switch the tip pins to GND when nothing plugged in\n3. U1B might benefit from a resistor and capacitor in the negative feedback loop so there is some amplification\n\n"
+		(exclude_from_sim no)
+		(at 55.372 125.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1cf5b348-5ac8-4e39-b5ff-4cf4de3e045b")
+	)
 	(junction
 		(at 214.63 64.77)
 		(diameter 0)
@@ -2414,7 +2244,7 @@
 		(at 173.99 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d89f5ae-db25-456d-b437-ac0d55d28fbb")
+		(uuid "0d16699f-2fbf-415f-838e-db1ea66efe65")
 	)
 	(junction
 		(at 139.7 55.88)
@@ -2427,6 +2257,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "17b71ee4-97a3-46ad-a821-a961521864de")
+	)
+	(junction
+		(at 212.09 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ebf0e86-9def-4928-9229-bda5694db5a7")
 	)
 	(junction
 		(at 173.99 102.87)
@@ -2501,6 +2337,12 @@
 		(uuid "69184045-2177-401e-a429-8457989c3802")
 	)
 	(junction
+		(at 208.28 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "693f8d90-3d3b-4324-9796-0baf7fb8c67f")
+	)
+	(junction
 		(at 220.98 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2541,6 +2383,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d533b4d-3373-4ecd-9f9a-dcd4252e0f3b")
+	)
+	(junction
+		(at 215.9 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2a3f74c-2549-42d7-9393-2a45725bde13")
 	)
 	(junction
 		(at 142.24 102.87)
@@ -2597,12 +2445,6 @@
 		(uuid "dd890bee-f1d2-4d8c-9a3a-d488d2e8b33c")
 	)
 	(junction
-		(at 218.44 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de2a9733-6169-4a3b-8941-50143dd7b0df")
-	)
-	(junction
 		(at 81.28 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2616,7 +2458,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 86.36) (xy 218.44 86.36)
+			(xy 215.9 86.36) (xy 220.98 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2783,6 +2625,16 @@
 			(type default)
 		)
 		(uuid "26f5314b-a1b8-4b2e-930a-80f6b2a06db0")
+	)
+	(wire
+		(pts
+			(xy 215.9 95.25) (xy 214.63 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277cc555-55b3-4037-996e-3d8d6e16fcdf")
 	)
 	(wire
 		(pts
@@ -2963,6 +2815,16 @@
 			(type default)
 		)
 		(uuid "4cf7ede7-edc1-4865-8086-fd161abb7272")
+	)
+	(wire
+		(pts
+			(xy 208.28 95.25) (xy 209.55 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5142f2de-ab66-4796-a3b5-f945906d8eb7")
 	)
 	(wire
 		(pts
@@ -3226,6 +3088,36 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 86.36) (xy 215.9 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884ac710-0197-4991-9356-de3f1d6ece22")
+	)
+	(wire
+		(pts
+			(xy 208.28 86.36) (xy 208.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a74ec65-e905-4480-a968-3ab002b13525")
+	)
+	(wire
+		(pts
+			(xy 173.99 60.96) (xy 173.99 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b723242-8602-42f7-8ee9-2c85e8aaaf7a")
+	)
+	(wire
+		(pts
 			(xy 102.87 80.01) (xy 102.87 91.44)
 		)
 		(stroke
@@ -3306,13 +3198,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 59.69) (xy 173.99 64.77)
+			(xy 212.09 82.55) (xy 212.09 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a290e23c-6eba-417e-8990-3ae28c49edc1")
+		(uuid "a7f6f696-2f2e-4b06-9d7a-f813f5481920")
 	)
 	(wire
 		(pts
@@ -3343,6 +3235,16 @@
 			(type default)
 		)
 		(uuid "aed2f953-080a-4248-be42-b20e4f2d47f6")
+	)
+	(wire
+		(pts
+			(xy 173.99 53.34) (xy 173.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afc0c363-6257-471b-b048-ade874e076d5")
 	)
 	(wire
 		(pts
@@ -3396,7 +3298,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 82.55) (xy 218.44 82.55)
+			(xy 212.09 82.55) (xy 215.9 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3726,7 +3628,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 82.55) (xy 218.44 86.36)
+			(xy 215.9 82.55) (xy 215.9 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3753,16 +3655,6 @@
 			(type default)
 		)
 		(uuid "f76e05ce-9b40-40e8-b705-178801e0c900")
-	)
-	(wire
-		(pts
-			(xy 218.44 86.36) (xy 220.98 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feb7e8db-8828-437a-8cc3-43def30084e2")
 	)
 	(symbol
 		(lib_id "power:+9VA")
@@ -4420,6 +4312,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 212.09 100.33 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b46770f-626c-4afe-ac79-07255380c03e")
+		(property "Reference" "J6"
+			(at 206.756 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 212.09 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+			(at 212.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 212.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1a4e9e4a-8b7d-4d57-9796-c2348a1a36f7")
+		)
+		(pin "1"
+			(uuid "d790c288-5334-4d83-be1e-d10a8b0467d9")
+		)
+		(pin "2"
+			(uuid "e9e7fac9-01a5-4a98-9adb-84d34405b4fc")
+		)
+		(instances
+			(project ""
+				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 214.63 64.77 0)
 		(unit 1)
@@ -4825,77 +4789,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer_Trim")
-		(at 212.09 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50705f90-5f0f-439e-a201-70b5106148ea")
-		(property "Reference" "TR1"
-			(at 212.09 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K"
-			(at 212.09 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-10-V05_Vertical"
-			(at 212.09 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Trim-potentiometer"
-			(at 212.09 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "41502945-ce16-442d-9675-05475e2ef0f3")
-		)
-		(pin "2"
-			(uuid "163d5554-1d72-4a8c-a0d4-9088556c2776")
-		)
-		(pin "1"
-			(uuid "55194c5a-e8bd-442b-a3cb-9fad9e572a5f")
-		)
-		(instances
-			(project ""
-				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
-					(reference "TR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 226.06 91.44 0)
 		(unit 1)
@@ -5230,6 +5123,76 @@
 			(project ""
 				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5817")
+		(at 173.99 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dcb4209-b8c1-4836-9ce4-c45541c538fc")
+		(property "Reference" "D1"
+			(at 176.53 56.1974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5817"
+			(at 176.53 58.7374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 178.435 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 173.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 173.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ded593f-297c-49a2-9bbe-29a5fd1b9867")
+		)
+		(pin "2"
+			(uuid "d967e80f-61b7-4d5c-bada-d7d9092837a4")
+		)
+		(instances
+			(project ""
+				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6888,6 +6851,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 212.09 86.36 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "d34c3281-20c0-4992-8d87-fd961a7142ae")
+		(property "Reference" "RV3"
+			(at 212.09 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100KB"
+			(at 212.09 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cd023ae4-9d2d-4a1c-b7dd-520c8074828a")
+		)
+		(pin "3"
+			(uuid "e591e9f2-b682-4fde-8c34-44f621809fab")
+		)
+		(pin "1"
+			(uuid "daddbb88-bbc8-4f0b-b09a-ee2272d208be")
+		)
+		(instances
+			(project ""
+				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9VA")
 		(at 107.95 69.85 0)
 		(unit 1)
@@ -7298,94 +7332,6 @@
 			(project ""
 				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4148")
-		(at 173.99 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe4eeca4-595f-4128-9438-4ca782f47dd1")
-		(property "Reference" "D1"
-			(at 176.53 54.6099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 176.53 57.1499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 173.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 173.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 173.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 173.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 173.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7ce378cb-6b6d-41bf-936d-919a27bbecc9")
-		)
-		(pin "1"
-			(uuid "1f05f953-dca2-4263-9c4d-bef5e176efca")
-		)
-		(instances
-			(project ""
-				(path "/dd0f4f85-8a06-4c68-92dc-fefacd0af10a"
-					(reference "D1")
 					(unit 1)
 				)
 			)
