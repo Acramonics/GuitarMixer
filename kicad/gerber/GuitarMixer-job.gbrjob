@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-09-08T12:12:36+01:00"
+    "CreationDate": "2025-09-08T17:14:01+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "GuitarMixer",
       "GUID": "47756974-6172-44d6-9978-65722e6b6963",
-      "Revision": "V0.2"
+      "Revision": "V0.3"
     },
     "Size": {
       "X": 45.05,
