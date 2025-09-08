@@ -1,7 +1,7 @@
 AEGM: Acoustic/Electric Guitar Mixer
 ====================================
 
-** Andrew Martin (c) 2025 **
+**Andrew Martin (c) 2025**
 
 *Note: the current version works, but has various problems including a
  very low level on the coil input and bad distortion.*
