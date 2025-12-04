@@ -3,6 +3,9 @@ AEGM: Acoustic/Electric Guitar Mixer
 
 **Andrew Martin (c) 2025**
 
+**Still not working properly yet - my test board worked fine!**
+
+
 *AEGM* is designed as a simple 2-channel mixer for guitars like the
 PRS range that have both acoustic (piezo) and coil pickups. The
 guitars have a combined output, but it doesn't work that well since
