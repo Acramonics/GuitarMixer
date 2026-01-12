@@ -449,7 +449,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "GuitarMixer.kicad_pro",
+    "filename": "AEGM_LT.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -604,7 +604,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "./cd.pdf",
+    "plot_directory": "./",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

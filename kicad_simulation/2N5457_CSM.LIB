@@ -1,0 +1,42 @@
+* Spice Model
+* Item: 2N5457
+* Date: 11/8/22
+* Revision History: A
+*==========================================================
+* This model was developed by: 
+* Central Semiconductor Corp.
+* 145 Adams Avenue
+* Hauppauge, NY 11788
+*
+* These models are subject to change without notice.
+* Users may not directly or indirectly re-sell or 
+* re-distribute this model. This model may not 
+* be modified, or altered without the consent of Central Semiconductor Corp. 
+*
+* For more information on this model contact
+* Central Semiconductor Corp. at:
+* (631) 435-1110 or Engineering@centralsemi.com
+* http://www.centralsemi.com
+**==========================================================
+*DEVICE=2N5457,NJF
+* 2N5457 NJF model
+* updated using Model Editor release 17.4.0 on 10/18/22 at 15:19
+* The Model Editor is a PSpice product.
+.MODEL 2N5457 NJF
++ VTO=-1.4676
++ BETA=1.6275E-3
++ LAMBDA=883.30E-6
++ IS=783.14E-18
++ ISR=7.8314E-15
++ NR=2.6845
++ ALPHA=778.30E-9
++ VK=.1
++ RD=60.461
++ RS=60.461
++ CGD=782.34E-12
++ CGS=5.3953E-12
++ M=1.5000
++ PB=.3905
++ KF=1.0000E-18
++ BETATCE=-.5
++ VTOTC=-2.5000E-3
