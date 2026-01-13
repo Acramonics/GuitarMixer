@@ -1,7 +1,7 @@
 AEGM: Acoustic/Electric Guitar Mixer
 ====================================
 
-**Andrew Martin (c) 2025**
+**Andrew Martin (c) 2025 - 2026**
 
 **Still not working properly yet - my test board worked fine!**
 
