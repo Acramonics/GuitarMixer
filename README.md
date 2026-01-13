@@ -5,6 +5,8 @@ AEGM: Acoustic/Electric Guitar Mixer
 
 **Still not working properly yet - my test board worked fine!**
 
+**V1.2 has now ben simulated in KiCad-Spice and appears to be working
+  properly now! Just waiting for the new boards.**
 
 *AEGM* is designed as a simple 2-channel mixer for guitars like the
 PRS range that have both acoustic (piezo) and coil pickups. The
