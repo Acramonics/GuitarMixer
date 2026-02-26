@@ -6122,7 +6122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 57.15 158.115 0)
 			(effects
 				(font
@@ -6131,7 +6131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+		(property "Datasheet" ""
 			(at 57.15 162.56 0)
 			(effects
 				(font
@@ -6140,7 +6140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+		(property "Description" ""
 			(at 57.15 162.56 0)
 			(effects
 				(font
@@ -6747,7 +6747,7 @@
 				)
 			)
 		)
-		(property "Value" "LM317L_TO92"
+		(property "Value" "LM317L"
 			(at 88.9 158.75 0)
 			(effects
 				(font
